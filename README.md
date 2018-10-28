@@ -163,6 +163,8 @@ bin/zkCli.sh \
 
 ### Create/Delete node example
 
+[Connecting to ZooKeeper](http://zookeeper.apache.org/doc/r3.5.4-beta/zookeeperStarted.html#sc_ConnectingToZooKeeper)
+
 간단하게 주키퍼에 노드 추가/삭제를 해본다.
 
 ```bash
