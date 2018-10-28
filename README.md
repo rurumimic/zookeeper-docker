@@ -2,6 +2,8 @@
 
 Default Zookeeper cluster with docker.
 
+---
+
 ## library/zookeeper
 
 Docker Hub: [library/zookeeper](https://hub.docker.com/_/zookeeper/)  
@@ -12,6 +14,8 @@ GitHub: [31z4/zookeeper-docker](https://github.com/31z4/zookeeper-docker)
 ```bash
 docker pull zookeeper
 ```
+
+---
 
 ## Network
 
@@ -40,6 +44,8 @@ docker network create -d overlay --attachable zookeeper_net
 도커 컨테이너끼리 통신을 할 때는 `--link` 옵션을 사용하지 말고 네트워크를 구성하는 것이 좋다.
 </aside>
 
+---
+
 ## Standalone mode
 
 ```bash
@@ -47,6 +53,8 @@ docker run --name standalone-zookeeper --network zookeeper_net --restart always 
 ```
 
 도커 이미지의 기본 포트로 `2181`, `2888`, `3888`가 설정되어 있다. (클라이언트 포트, 팔로워 포트, 마스터 선출 포트)
+
+---
 
 ## Replicated mode
 
@@ -134,6 +142,8 @@ docker-compose up -d
 ```bash
 docker stack deploy -c stack.yml zookeeper
 ```
+
+---
 
 ## Test
 
