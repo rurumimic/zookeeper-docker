@@ -36,13 +36,11 @@ docker network create -d overlay --attachable zookeeper_net
 도커 네트워크는 기본적으로 `bridge`로 생성된다.  
 오버레이 네트워크에 도커 컨테이너를 추가/제거할 수 있도록 `--attachable` 옵션을 사용한다.
 
-<aside class="warning">
 ***--link***
 
 [Legacy container links](https://docs.docker.com/network/links/)
 
 도커 컨테이너끼리 통신을 할 때는 `--link` 옵션을 사용하지 말고 네트워크를 구성하는 것이 좋다.
-</aside>
 
 ---
 
