@@ -155,8 +155,6 @@ bin/zkCli.sh \
 -server standalone-zookeeper
 ```
 
-`-server standalone-zookeeper:2181`에서 포트 부분을 생략할 수 있다.
-
 ### Replicated mode
 
 ```bash
