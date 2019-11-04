@@ -117,7 +117,7 @@ networks:
 대신 도커를 사용할 때는 환경변수를 사용한다.
 
 - ZOO_MY_ID: 앙상블 안에서 서버는 각자 유일한 1 ~ 255 사이 값을 가진다.
-- ZOO_SERVERS: `server.id=host:port:port` 형태로 서버들을 지정한다.
+- ZOO_SERVERS: `server.id=host:port:port;client_port` 형태로 서버들을 지정한다.
 
 이 밖에도 다른 [환경변수](https://github.com/31z4/zookeeper-docker/#environment-variables)를 설정할 수 있다.
 
